@@ -1,0 +1,80 @@
+
+p {
+  margin: 0;
+}
+.explore-places {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e4e4e4;
+}
+.cards {
+  border-radius: 3px;
+  margin: 20px 10px 20px 10px;
+  overflow: hidden;
+  width: calc(15% - 20px);
+
+  display: grid;
+  grid-template-areas: 'card-header' 'card-body';
+  grid-template-columns: 100%;
+}
+.card-header {
+  background: #f1f1f1 url('https://www.azutura.com/media/catalog/product/cache/47/image/650x/040ec09b1e35df139433887a97daa66f/W/S/WS-47541_WP.jpg') no-repeat center;
+  height: 250px;
+  grid-area: card-header;  
+}
+.card-body {
+  background-color: #ffffff;
+  display: grid;
+  grid-area: card-body;
+  padding: 20px 15px 15px;
+  grid-template-areas: 'card-description' 'card-footer';  
+  grid-template-columns:100%;
+  grid-template-rows: auto;
+  grid-row-gap: 15px;
+
+}
+.card-description {
+  font-size: 21px;
+  grid-area: card-description;
+}
+.card-footer {
+  align-items: end;
+  grid-area: card-footer;  
+  display: grid;
+  grid-template-areas: 'rating price';
+  grid-template-columns: 50%;
+  grid-column-gap: 10px;
+}
+.rating {
+  grid-area: rating;
+}
+.price {
+  font-size: 21px;
+  grid-area: price;
+  text-align: end;
+}
+.price-detail {
+  color: #1A2B49;
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+}
+.place {
+  color:#60CCFF;
+  display: block;
+  font-weight: 700;
+}
+.votes {
+  background-color: #32A636;
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.complement {
+  font-size: 18px;
+  color: gray;
+}
